@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e5e7eb;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  transition: 3000ms all;
+}
+
+.btn {
+  @apply block w-full h-full py-2 bg-white rounded-md shadow cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-400;
+}
+.header {
+  @apply flex items-center bg-white p-4 rounded-md shadow row-span-1 col-span-10;
+}
+.hints {
+  @apply bg-white p-4 rounded-md shadow h-full col-span-2 row-span-5 overflow-auto;
+}
+.editor {
+  @apply bg-white rounded-md shadow h-full col-span-4 row-span-5;
+}
+.preview {
+  @apply bg-white rounded-md shadow h-full col-span-4 overflow-auto p-4 row-span-5;
+}
