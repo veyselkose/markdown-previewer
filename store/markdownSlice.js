@@ -40,6 +40,7 @@ const markdownSlice = createSlice({
     help,
     helpActive: false,
     markdown: "",
+    dark: false,
   },
   reducers: {
     updateMarkdown: (state, action) => {
@@ -51,9 +52,12 @@ const markdownSlice = createSlice({
     toggleHelp: (state) => {
       state.helpActive = !state.helpActive;
     },
+    toggleTheme: (state) => {
+      state.dark = !state.dark;
+    },
   },
 });
 
-export const { updateMarkdown, toggleHelp ,addElement } = markdownSlice.actions;
+export const { updateMarkdown, toggleHelp, addElement ,toggleTheme} = markdownSlice.actions;
 
 export default markdownSlice.reducer;
