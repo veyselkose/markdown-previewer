@@ -25,6 +25,9 @@
 .headerBtn {
   @apply bg-gray-200 transition-all dark:bg-zinc-600 flex items-center justify-center h-11 w-11 rounded hover:ring-2 hover:ring-gray-300;
 }
+.helpActive {
+  @apply bg-blue-500 dark:bg-blue-500 text-white ;
+}
 .appGrid {
   @apply grid grid-cols-10 gap-4;
   height: calc(100% - 92px);
@@ -44,8 +47,8 @@
 .textarea {
   @apply resize-none w-full h-full p-4 text-xl bg-gray-100 border-gray-300 dark:bg-zinc-800 dark:border-zinc-700 dark:text-white border  rounded-md focus:outline-none focus:!border-blue-500;
 }
-.nav-container{
-  @apply hidden
+.nav-container {
+  @apply hidden;
 }
 @media screen and (max-width: 1024px) {
   .appGrid {
@@ -54,7 +57,7 @@
   .hints,
   .editor,
   .preview {
-    @apply h-full w-full flex-shrink-0;
+    @apply h-full w-full flex-shrink-0 transition-all duration-500;
   }
   .translate-100 {
     transform: translateX(-100%);
