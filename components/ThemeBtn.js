@@ -6,7 +6,7 @@ function ThemeBtn() {
   const { dark } = useSelector((state) => state.markdown);
   const dispatch = useDispatch();
   return (
-    <button className={`headerBtn ms-auto`} onClick={() => dispatch(toggleTheme())}>
+    <button className={`flex headerBtn !w-[calc(100%-32px)] mx-auto sm:mx-0 sm:!w-11 sm:ms-4`} onClick={() => dispatch(toggleTheme())}>
       {dark ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
